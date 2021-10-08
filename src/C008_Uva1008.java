@@ -30,7 +30,7 @@ import java.util.Scanner;
  * Q 1
  * Y 1
 * */
-public class C044_Uva1008 {
+public class C008_Uva1008 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String temp = scanner.nextLine();

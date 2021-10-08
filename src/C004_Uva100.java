@@ -34,10 +34,11 @@ import java.util.Scanner;
  * 201 210 89
  * 900 1000 174
  **/
+
 public class C004_Uva100 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextInt()) {
+        while (scanner.hasNext()) {
             int firstInput = scanner.nextInt();
             int secondInput = scanner.nextInt();
             int min = Math.min(firstInput, secondInput);
