@@ -17,7 +17,7 @@ import java.util.Scanner;
 //        No carry operation.
 //        3 carry operations.
 //        1 carry operation.
-public class C014_UVa10035 {
+public class C003_UVa10035 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         while (scanner.hasNext()){
