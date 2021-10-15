@@ -1,3 +1,5 @@
+package not;
+
 import java.util.Scanner;
 
 /**
