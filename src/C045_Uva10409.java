@@ -37,6 +37,7 @@ public class C045_Uva10409 {
             for (int i = 0; i < times; i++) {
                 String turn = scanner.next();
                 if (turn.equals("north")) {
+                    //設定翻轉位置 設定上方 設定翻轉位置對面
                     N = currPost;
                     currPost = S;
                     S = 7 - N;
