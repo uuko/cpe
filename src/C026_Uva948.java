@@ -62,12 +62,13 @@ public class C026_Uva948 {
 
         while (--time>=0){
             a=scanner.nextInt();
+            //用string builder  
             StringBuilder builder=new StringBuilder(a+" = ");
             int i=realsize;
             while (a<fay[i]){
                 i--;
             }
-
+            // 從他第一位開始減 直到第0位
             while (i>=0){
                 if (a>=fay[i]){
                     a=a-fay[i];
@@ -78,6 +79,7 @@ public class C026_Uva948 {
                 i--;
 
             }
+            //用append
             builder.append(" (fib)");
             System.out.println(builder.toString());
         }
