@@ -93,13 +93,13 @@ public class C043_Uva10226 {
         Scanner scanner = new Scanner(System.in);
 
         int sizes = scanner.nextInt();
-
+        // 因為會有狗幹空格 所以用for迴圈無用 直接抓
         while (scanner.hasNextLine()) {
             Map<String, Integer> map = new HashMap<>();
             List<String> sortList = new ArrayList<>();
             int count = 0;
             String input;
-
+            //空格不抓繼續往下 然後整理資料 為第一筆測資
             while (scanner.hasNextLine()
                     && !(input = scanner.nextLine()).equals("")) {
 
@@ -116,6 +116,7 @@ public class C043_Uva10226 {
                 System.out.printf("%s %.4f", s, (float) map.get(s) / count * 100);
                 System.out.println();
             }
+            //這裡要判斷測資中間空格 所以用size--
             if(map.size()!=0 && (--sizes)>0)System.out.println("");
         }
 
