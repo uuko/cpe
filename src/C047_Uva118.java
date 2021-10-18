@@ -28,6 +28,7 @@ public class C047_Uva118 {
 
                     if (tempX > edgeX || tempY > edgeY
                             || tempX < 0 || tempY < 0) {
+                        //
                         if (!out[orgX][orgY]) {
                             out[orgX][orgY] = true;
                             System.out.println(orgX + " " + orgY + " " + position + " LOST");
