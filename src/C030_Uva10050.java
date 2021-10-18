@@ -57,6 +57,7 @@ public class C030_Uva10050 {
             for (int i=0;i<partyDay.length;i++){
                 partyDay[i]=scanner.nextInt();
             }
+            // 要注意可以有天數+1 到最後一天
             int [] days=new int[d+1];
 
             for (int i=0;i<policy;i++){
@@ -68,6 +69,7 @@ public class C030_Uva10050 {
             }
 
             int count=0;
+            // %7 %6 要注意
             for(int i=0;i<d+1;i++) if(i%7!=6 && i%7!=0 && days[i]==1) count++; //星期五、星期六不須計算。
             //Output
             System.out.println(count);
