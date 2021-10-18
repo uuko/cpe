@@ -32,7 +32,7 @@ public class C0039 {
                 }
             }
 
-            //兩對角線相加答案皆一樣的想法去解
+            //兩對角線相加答案皆一樣的想法去解 好像一定要xy
             double x=0,y=0;
             for(int i=0;i<point.length;i++){
                 if(!(point[i][0]==same[0] && point[i][1]==same[1])){
