@@ -29,7 +29,9 @@ public class C0035 {
         while((num=sc.nextInt())!=0){
             int ans=0;
             for(int i=1;i<num;i++){
+                //是 <= num
                 for(int j=i+1;j<=num;j++){
+                    
                     ans+=gcd(i,j);
                 }
             }
@@ -38,7 +40,7 @@ public class C0035 {
         }
     }
     public static int gcd(int a,int b){
-
+        //是 &&
         while(a!=0 && b%a!=0){
             int temp=b;
 
