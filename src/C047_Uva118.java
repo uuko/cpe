@@ -11,6 +11,7 @@ public class C047_Uva118 {
             int orgX = scanner.nextInt();
             int orgY = scanner.nextInt();
             char position = scanner.next().charAt(0);
+            // 注意要next()
             String cmd = scanner.next();
             for (int i = 0; i < cmd.length(); i++) {
                 if (cmd.charAt(i)=='F'){
@@ -32,7 +33,9 @@ public class C047_Uva118 {
                             System.out.println(orgX + " " + orgY + " " + position + " LOST");
                             break;
                         }
-                    } else {
+                    } 
+                    //注意要else
+                    else {
                         orgX = tempX;
                         orgY = tempY;
                     }
