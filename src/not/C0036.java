@@ -83,6 +83,7 @@ public class C0036 {
                 for (i = 0; i < m; i++) {
                     boolean flag = true;
                     for (int j = m2 - i; j <= m2 + i && flag; j++) {
+                        //注意等於 跟 範圍 還有y是前面
                         for (int k = n2 - i; k <= n2 + i; k++) {
                             if (j < 0 || k < 0 || j >= m || k >= n || cmp != grid[j][k]) {
                                 flag = false;
