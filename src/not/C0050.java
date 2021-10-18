@@ -88,7 +88,7 @@ public class C0050 {
         }
 
 
-
+        // 重點 一定要用even 去判斷 雖然不知道為啥 ㄏㄏ
         @Override
         public int compareTo(Data other) {
             if(this.r != other.r)
