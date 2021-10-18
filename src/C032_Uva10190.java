@@ -19,12 +19,14 @@ public class C032_Uva10190 {
         while (scanner.hasNextLong()) {
             long n = scanner.nextLong();
             long m = scanner.nextLong();
-
+            //要用flag去做
             boolean flag = true;
             if (m==1 || n==0 || m==0)flag=false;
             List list = new ArrayList<>();
             while (flag) {
+                //要先加
                 list.add(n);
+                //是 1 就break
                 if (n == 1) break;
                 if (n % m == 0) n = n / m;
                 else {
