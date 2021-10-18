@@ -60,6 +60,7 @@ public class C046_Uva10415 {
                 }
                 temp = temp.substring(1);
                 for (int z = 0; z < count.length; z++) {
+                    //1 要用
                     if (temp.charAt(z) == '1'
                             && temp.charAt(z) != last.charAt(z)) {
                         count[z]++;
