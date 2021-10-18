@@ -46,7 +46,7 @@ public class C033 {
             for(int i=n.length()-1;i>=0;i--){
                 r=r+n.charAt(i);
             }
-
+            //
             if(isPrime(Integer.parseInt(n)) && isPrime(Integer.parseInt(r)) && !n.equals(r)) System.out.println(n+" is emirp."); //r,n皆為質，且r!=n
             else if(isPrime(Integer.parseInt(n))) System.out.println(n+" is prime."); // n為質數
             else System.out.println(n+" is not prime."); //都不是
