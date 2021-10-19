@@ -27,7 +27,8 @@ public class C003_UVa10035 {
             if (firstInput==0 && secondInput==0)break;
             int next=0;
             int carry=0;
-            while (firstInput!=0 && secondInput!=0){
+            //用OR考慮最高位
+            while (firstInput!=0 || secondInput!=0){
                 if (firstInput%10 + secondInput%10 +next>=10){
                     next=1;
                     carry++;
