@@ -44,23 +44,27 @@ import java.util.Scanner;
 public class C012_Uva490 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        char arr[][]=new char[101][101];
+        List<String> list =new ArrayList<String>();
         int lineCount=0,max = 0;;
         while (scanner.hasNextLine()){
             String input=scanner.nextLine();
             if (input.length()>max) max=input.length();
-            for (int i=0;i<input.length();i++){
-                arr[lineCount][i]=input.charAt(i);
-            }
+            list.add(input);
             lineCount++;
         }
-
+        int c=0;
+        //while 去算 c
         for (int j=0;j<max;j++){
+            c=0;
             for (int k = lineCount - 1; k >= 0; k--) {
-                if (arr[k][j] == '\0') {
-                    System.out.print(" ");
-                } else
-                    System.out.print(arr[k][j]);
+                if(list.get(k).length()>j){
+                    while(c>0){
+                        System.out.print(" ");
+                        c--;
+                    }
+                     System.out.print(list.get(k).charAt(j));
+                }
+                else{ c++ ;}
             }
             System.out.println();
         }
