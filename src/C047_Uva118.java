@@ -45,7 +45,7 @@ public class C047_Uva118 {
                     position=findP(position,cmd.charAt(i));
                 }
 
-
+                //注意print 要在這
                 if(i==cmd.length()-1) System.out.println(orgX+" "+orgY+" "+position);
             }
 
